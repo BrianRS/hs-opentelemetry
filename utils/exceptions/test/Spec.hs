@@ -10,9 +10,9 @@ import Control.Monad.Trans.Maybe (MaybeT (..), runMaybeT)
 import Data.IORef
 import Data.Text (Text)
 import OpenTelemetry.Attributes (Attributes, lookupAttribute)
+import OpenTelemetry.Attributes.Attribute (Attribute (..), PrimitiveAttribute (..))
 import OpenTelemetry.Context (lookupSpan)
 import OpenTelemetry.Context.ThreadLocal (getContext)
-import OpenTelemetry.Attributes.Attribute (Attribute (..), PrimitiveAttribute (..))
 import OpenTelemetry.Exporter.InMemory.Span (inMemoryListExporter)
 import OpenTelemetry.Trace.Core
 import OpenTelemetry.Utils.Exceptions
